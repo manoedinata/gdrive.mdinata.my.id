@@ -47,7 +47,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then, copy the folder id and paste it here
      */
     rootFolder:
-      "e7f2975c7e2d05f019df18477b643293886cbab406a380648385cfa2bb13210fb5dc11a5a425acbf47fc3ff3020e262422;643c4d3905a72dae995346b7",
+      "d5aa06a492a03f2c5c100ea6f3af25d5bb4d3d91436ddd80565cc4e74a6441ce9db91b5e138cf9da88b32c843fd9ebb9bc;a1f0d8eda0c1f9364a17fb7e",
 
     /**
      * If your rootfolder inside a shared drive, you NEED to set this to true
@@ -63,7 +63,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then you need to encrypt it using `/api/internal/encrypt?q=:shared_drive_id` route
      */
     isTeamDrive: true,
-    sharedDrive: "2b2b3f2f5188bff2cede82584092010adb62803dbc37b1e5ad39bffb81078fa76c01da;910d546b8a0062baf5b221b4",
+    sharedDrive: "8039aecf9afbfc59dd115c9d280c06d447b70aa2b3fd5cfbafa014fade64b76b0d462c;bf2985b90e53acbf9524d147",
 
     defaultQuery: ["trashed = false", "(not mimeType contains 'google-apps' or mimeType contains 'folder')"],
     defaultField:
@@ -172,11 +172,11 @@ const config: z.input<typeof Schema_Config> = {
      *
      * You can set it to undefined if you don't want to use it
      */
-    siteName: "next-gdrive-index",
+    siteName: "Hendra's GDrive",
     siteNameTemplate: "%s - %t",
     siteDescription: "A simple file browser for Google Drive",
     siteIcon: "/logo.svg",
-    siteAuthor: "mbaharip",
+    siteAuthor: "Hendra Manudinata",
     favIcon: "/favicon.png",
     /**
      * Next.js Metadata robots object
@@ -184,7 +184,7 @@ const config: z.input<typeof Schema_Config> = {
      * ref: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#robots
      */
     robots: "noindex, nofollow",
-    twitterHandle: "@mbaharip_",
+    twitterHandle: "@manoedinata",
 
     /**
      * Show file extension on the file name
@@ -261,13 +261,7 @@ const config: z.input<typeof Schema_Config> = {
      *  href: string,
      * }
      */
-    supports: [
-  {
-    "name": "Paypal",
-    "currency": "USD",
-    "href": "https://paypal.me/manoedinata"
-  }
-],
+    supports: [],
 
     /**
      * Footer content
@@ -291,7 +285,7 @@ const config: z.input<typeof Schema_Config> = {
     "value": "{{ poweredBy }}"
   },
   {
-    "value": "Configured with ❤️ by [**Hendra Manudinata**](https://mdinata.my.id)"
+    "value": "Configured with ❤️ by [**{{ author }}**](https://github.com/mbaharip)"
   }
 ],
     /**
