@@ -47,7 +47,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then, copy the folder id and paste it here
      */
     rootFolder:
-      "d5aa06a492a03f2c5c100ea6f3af25d5bb4d3d91436ddd80565cc4e74a6441ce9db91b5e138cf9da88b32c843fd9ebb9bc;a1f0d8eda0c1f9364a17fb7e",
+      "b828acceb38e03c52ff5fc015422d9dcb52f7e4c4880076bc7484e21990cb1129fc2031678b02e4be28278b092e86410e7;b2b7e634deb81292b98a7976",
 
     /**
      * If your rootfolder inside a shared drive, you NEED to set this to true
@@ -62,8 +62,8 @@ const config: z.input<typeof Schema_Config> = {
      *
      * Then you need to encrypt it using `/api/internal/encrypt?q=:shared_drive_id` route
      */
-    isTeamDrive: true,
-    sharedDrive: "8039aecf9afbfc59dd115c9d280c06d447b70aa2b3fd5cfbafa014fade64b76b0d462c;bf2985b90e53acbf9524d147",
+    isTeamDrive: false,
+    sharedDrive: "",
 
     defaultQuery: ["trashed = false", "(not mimeType contains 'google-apps' or mimeType contains 'folder')"],
     defaultField:
@@ -172,11 +172,11 @@ const config: z.input<typeof Schema_Config> = {
      *
      * You can set it to undefined if you don't want to use it
      */
-    siteName: "Hendra's GDrive",
+    siteName: "next-gdrive-index",
     siteNameTemplate: "%s - %t",
     siteDescription: "A simple file browser for Google Drive",
     siteIcon: "/logo.svg",
-    siteAuthor: "Hendra Manudinata",
+    siteAuthor: "mbaharip",
     favIcon: "/favicon.png",
     /**
      * Next.js Metadata robots object
@@ -184,7 +184,7 @@ const config: z.input<typeof Schema_Config> = {
      * ref: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#robots
      */
     robots: "noindex, nofollow",
-    twitterHandle: "@manoedinata",
+    twitterHandle: "@mbaharip_",
 
     /**
      * Show file extension on the file name
@@ -285,7 +285,7 @@ const config: z.input<typeof Schema_Config> = {
     "value": "{{ poweredBy }}"
   },
   {
-    "value": "Configured with ❤️ by [**{{ author }}**](https://github.com/mbaharip)"
+    "value": "Made with ❤️ by [**{{ author }}**](https://github.com/mbaharip)"
   }
 ],
     /**
